@@ -2,7 +2,7 @@ import random
 
 pdict = {}
 
-parsed = [i.split() for i in open("raw.txt","r").read().split("\n\n")]
+parsed = [i.split() for i in open("raw.txt","r",errors="ignore").read().split("\n\n")]
 
 for l in parsed:
     for i,j in zip(l,l[1:]):
